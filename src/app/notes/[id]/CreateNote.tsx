@@ -18,7 +18,7 @@ export default function CreateNote() {
     <div className="flex items-center justify-center">
       <form
         onSubmit={create}
-        className=" bg-gray-900 w-fukk rounded-md p-6 mb-6 w-1/3"
+        className=" bg-gray-900 w-fukk rounded-md p-6 mb-6 w-full md:w-full lg:w-1/2 xl:w-1/3"
       >
         <h3 className="my-6 text-left text-xl font-semibold uppercase">
           Create A Note
