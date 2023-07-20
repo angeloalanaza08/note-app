@@ -15,20 +15,36 @@ export default function CreateNote() {
     setTitle("");
   };
   return (
-    <form onSubmit={create}>
-      <h3>Create A Note</h3>
-      <input
-        type="text"
-        placeholder="Title"
-        value={Title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <textarea
-        placeholder="Content"
-        value={Content}
-        onChange={(e) => setContent(e.target.value)}
-      />
-      <button type="submit">Create Note</button>
-    </form>
+    <div className="flex items-center justify-center">
+      <form
+        onSubmit={create}
+        className=" bg-gray-900 w-fukk rounded-md p-6 mb-6 w-1/3"
+      >
+        <h3 className="my-6 text-left text-xl font-semibold uppercase">
+          Create A Note
+        </h3>
+        <div className="flex flex-col gap-6 auto-rows-auto">
+          <input
+            type="text"
+            placeholder="Title"
+            value={Title}
+            onChange={(e) => setTitle(e.target.value)}
+            className="rounded-md outline-0 bg-gray-800 text-white p-6 focus:bg-gray-700"
+          />
+          <textarea
+            placeholder="Content"
+            value={Content}
+            onChange={(e) => setContent(e.target.value)}
+            className="rounded-md outline-0 bg-gray-800 text-white resize-none p-6 h-52 focus:bg-gray-700"
+          />
+          <button
+            type="submit"
+            className="bg-gray-800 rounded-md p-6 hover:bg-blue-900"
+          >
+            Create Note
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }

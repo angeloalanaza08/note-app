@@ -19,12 +19,12 @@ export default async function NotesPage() {
       <h1 className="m-6 text-center text-2xl font-semibold uppercase">
         Note Archive
       </h1>
+      <CreateNote />
       <div className="grid grid-cols-4 gap-6">
         {notes?.map((note) => {
           return <Note key={note.id} note={note} />;
         })}
       </div>
-      <CreateNote />
     </div>
   );
 }
