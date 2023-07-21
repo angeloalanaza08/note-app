@@ -29,13 +29,13 @@ export default function CreateNote() {
             placeholder="Title"
             value={Title}
             onChange={(e) => setTitle(e.target.value)}
-            className="rounded-md outline-0 bg-gray-800 text-white p-6 focus:bg-gray-700"
+            className="rounded-md outline-0 bg-gray-800 text-white p-6 focus:border-blue-500 border border-slate-600 outline-none"
           />
           <textarea
             placeholder="Content"
             value={Content}
             onChange={(e) => setContent(e.target.value)}
-            className="rounded-md outline-0 bg-gray-800 text-white resize-none p-6 h-52 focus:bg-gray-700"
+            className="rounded-md bg-gray-800 text-white resize-none p-6 h-52 focus:border-blue-500 border border-slate-600 outline-none"
           />
           <button
             type="submit"
